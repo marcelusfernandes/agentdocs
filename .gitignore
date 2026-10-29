@@ -82,3 +82,8 @@ api/internal/server/download_dist/**
 /brag-output/
 frontend/tmp/
 .DS_Store
+
+# Local deployment / session files
+docker-compose.prod.yml
+.claude/
+HANDOFF.md
