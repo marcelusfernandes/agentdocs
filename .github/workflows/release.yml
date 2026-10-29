@@ -139,7 +139,7 @@ jobs:
           ls -l dist-chart
 
       - name: Build CLI archives and publish the release
-        uses: goreleaser/goreleaser-action@v6
+        uses: goreleaser/goreleaser-action@v7
         with:
           distribution: goreleaser
           version: "~> v2"
