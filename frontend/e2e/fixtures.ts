@@ -42,7 +42,7 @@ export async function loginThroughDex(page: Page) {
   await installAppStorage(page);
   await page.goto("/login?next=%2Fapp%2Fdocuments");
   await expect(
-    page.getByRole("heading", { name: "Sign in to slashdocs" }),
+    page.getByRole("heading", { name: "Sign in to AgentDocs" }),
   ).toBeVisible();
 
   await continueWithDex(page);

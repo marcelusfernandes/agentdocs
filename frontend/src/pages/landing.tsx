@@ -246,7 +246,7 @@ export function LandingPage() {
           <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
             <h2 className={h2}>Run it on your own servers.</h2>
             <p className={cn(lead, "mt-6")}>
-              Your documents and your data stay with you. slashdocs is MIT licensed.
+              Your documents and your data stay with you. AgentDocs is MIT licensed.
             </p>
             <div className="mt-12">
               <Architecture />
@@ -259,7 +259,7 @@ docker compose up`}</Start>
   --namespace slashdocs --create-namespace -f values.yaml`}</Start>
             </div>
             <p className="mt-6 text-sm text-[var(--color-fg-muted)]">
-              Compose starts slashdocs with Postgres, versitygw (S3), and a local Dex
+              Compose starts AgentDocs with Postgres, versitygw (S3), and a local Dex
               sign-in. For production, read the{" "}
               <a
                 href={SELF_HOSTING_URL}

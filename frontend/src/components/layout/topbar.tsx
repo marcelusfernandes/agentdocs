@@ -39,7 +39,7 @@ export function TopBar({
 }) {
   return (
     <header className="relative z-30 -mb-14 flex h-14 items-center justify-between px-4 md:px-6">
-      <Link to={home} aria-label="slashdocs home">
+      <Link to={home} aria-label="AgentDocs home">
         <Logo className="h-[18px] w-auto" />
       </Link>
       <div className="flex items-center gap-2">{children}</div>

@@ -11,7 +11,7 @@ export const siteLink =
 export function SiteHeader({ children }: { children?: React.ReactNode }) {
   return (
     <header className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
-      <Link to="/" aria-label="slashdocs home">
+      <Link to="/" aria-label="AgentDocs home">
         <Logo className="h-4 w-auto sm:h-5" />
       </Link>
       <nav className="-mr-3 flex items-center gap-1">
@@ -28,7 +28,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-[var(--color-border)]">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-6 py-8 text-sm text-[var(--color-fg-muted)]">
-        <span>slashdocs is open source under the MIT License.</span>
+        <span>AgentDocs is open source under the MIT License.</span>
         <nav className="-mx-3 flex flex-wrap">
           <a href={REPO_URL} target="_blank" rel="noreferrer" className={siteLink}>
             Source

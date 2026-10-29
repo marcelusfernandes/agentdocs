@@ -31,7 +31,7 @@ export function DocBarFrame({
       <Tooltip label="All documents">
         <Link
           to={home}
-          aria-label="slashdocs home"
+          aria-label="AgentDocs home"
           title="All documents"
           className="hidden h-10 shrink-0 items-center rounded-sm px-2 hover:bg-[var(--color-surface-muted)] sm:flex"
         >

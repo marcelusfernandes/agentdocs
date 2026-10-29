@@ -56,13 +56,13 @@ export function StartPage() {
           className="enter mt-2 text-[32px] font-normal leading-tight tracking-[-0.02em] md:text-[40px]"
           style={beat(1)}
         >
-          Get your agent publishing to slashdocs
+          Get your agent publishing to AgentDocs
         </h1>
         <p
           className="enter mx-auto mt-3 max-w-xl text-sm text-[var(--color-fg-muted)]"
           style={beat(2)}
         >
-          slashdocs is meant to be driven by your AI agent — Claude Code, Codex, Cursor,
+          AgentDocs is meant to be driven by your AI agent — Claude Code, Codex, Cursor,
           Pi, OpenCode, Aider, or anything else. These steps wire it up.
         </p>
       </header>
@@ -75,7 +75,7 @@ export function StartPage() {
           <div className="flex-1">
             <div className="font-heading font-medium">You're all set.</div>
             <div className="text-sm text-[var(--color-fg-muted)]">
-              Ask your agent to publish something to slashdocs. It'll show up here.
+              Ask your agent to publish something to AgentDocs. It'll show up here.
             </div>
           </div>
           <Button asChild size="sm">
@@ -113,7 +113,7 @@ export function StartPage() {
         {state.path === "mcp" ? (
           <Step
             n={1}
-            title="Add slashdocs to your agent app"
+            title="Add AgentDocs to your agent app"
             stepKey="agent_configured"
             {...step}
           >
@@ -130,11 +130,11 @@ export function StartPage() {
               <p className="mb-3 text-sm text-[var(--color-fg-muted)]">
                 One-time, on the machine where your agent runs. This installs the
                 slashdocs CLI plus the bundled agent skill, so your agent knows when to
-                publish docs to slashdocs.
+                publish docs to AgentDocs.
               </p>
               <CodeBlock>{`curl -fsSL ${publicURL()}/install.sh | sh`}</CodeBlock>
               <p className="mt-3 text-xs text-[var(--color-fg-muted)]">
-                Works on macOS and Linux. The skill is fetched from this slashdocs
+                Works on macOS and Linux. The skill is fetched from this AgentDocs
                 server and installed into the standard agent skills directory and
                 Claude's skills directory — no GitHub auth or npx step required.
               </p>
@@ -285,7 +285,7 @@ function TryItOut({ path }: { path: SetupPath }) {
     <div>
       <p className="mb-3 text-sm text-[var(--color-fg-muted)]">
         Copy this prompt into your agent. It writes an illustrated explainer and
-        publishes it to slashdocs.
+        publishes it to AgentDocs.
       </p>
       <CodeBlock wrap>{TRY_IT_PROMPT + PUBLISH[path]}</CodeBlock>
     </div>

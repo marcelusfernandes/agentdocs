@@ -22,7 +22,7 @@ export function DevelopersPage() {
     <Page lane="focus">
       <PageHeader
         title="Developers"
-        description="Connect an agent over MCP, use slashdocs from a terminal, or build directly against the API."
+        description="Connect an agent over MCP, use the CLI from a terminal, or build directly against the API."
       />
 
       <div className="enter space-y-4" style={beat(2)}>
@@ -32,14 +32,14 @@ export function DevelopersPage() {
               <Cable className="h-4 w-4" /> Connect an MCP client
             </CardTitle>
             <CardDescription>
-              Connect directly to this slashdocs server. There is no CLI, local bridge,
+              Connect directly to this AgentDocs server. There is no CLI, local bridge,
               or separate MCP process to install.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             <McpConnect />
             <p className="text-pretty text-xs text-[var(--color-fg-muted)]">
-              Interactive clients open the normal slashdocs sign-in flow automatically;
+              Interactive clients open the normal AgentDocs sign-in flow automatically;
               unattended agents can use a service-account token.
             </p>
           </CardContent>

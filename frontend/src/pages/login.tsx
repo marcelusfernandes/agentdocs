@@ -37,7 +37,7 @@ export function LoginPage() {
       <main className="flex flex-1 items-center justify-center px-6 py-16">
         <div className="glass-card enter w-full max-w-sm rounded-lg p-8 text-center">
           <h1 className="text-2xl font-normal tracking-[-0.02em]">
-            Sign in to slashdocs
+            Sign in to AgentDocs
           </h1>
           <p className="mt-2 font-mono text-xs text-[var(--color-fg-muted)]">
             {new URL(publicURL()).host}
